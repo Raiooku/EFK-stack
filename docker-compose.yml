@@ -18,7 +18,7 @@ services:
         read_only: true
     ports:
       - 8080:8080
-    depends-on:
+    depends_on:
       - elasticsearch
 
   kibana:
@@ -27,5 +27,5 @@ services:
       ELASTICSEARCH_URL: http://elasticsearch:9200
     ports:
       - 5601:5601
-    depends-on:
+    depends_on:
       - elasticsearch
